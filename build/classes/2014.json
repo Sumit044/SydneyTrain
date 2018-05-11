@@ -1,0 +1,44 @@
+{  
+   "Offences":[  
+      {  
+         "OffenceCategory":"Parking Offence",
+         "NumberOfPNs":"91891",
+         "FaceValue":"9297100"
+      },
+      {  
+         "OffenceCategory":"Fare Evasion/False Information",
+         "NumberOfPNs":"69705",
+         "FaceValue":"13038900"
+      },
+      {  
+         "OffenceCategory":"Compliance/Safety/Anti-social/Offensive Behaviour",
+         "NumberOfPNs":"32189",
+         "FaceValue":"7131850"
+      },
+      {  
+         "OffenceCategory":"Vehicle Offence",
+         "NumberOfPNs":"781",
+         "FaceValue":"212132"
+      },
+      {  
+         "OffenceCategory":"Feet on seat",
+         "NumberOfPNs":"617",
+         "FaceValue":"61700"
+      },
+      {  
+         "OffenceCategory":"Smoking Offence",
+         "NumberOfPNs":"450",
+         "FaceValue":"100250"
+      },
+      {  
+         "OffenceCategory":"Littering Offence",
+         "NumberOfPNs":"167",
+         "FaceValue":"29150"
+      },
+      {  
+         "OffenceCategory":"Animal Offence",
+         "NumberOfPNs":"123",
+         "FaceValue":"25171"
+      }
+   ]
+}

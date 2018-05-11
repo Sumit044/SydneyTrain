@@ -1,0 +1,77 @@
+.footer {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	margin-top: 15px;
+    height: 5%;
+    float: left;
+	
+}
+
+#header {
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+#YearlyDatatable {
+	margin: 2% 0 5% 5%;
+    width: 85%;
+    float: left;
+    position: relative;
+}
+
+.centerCol {
+	text-align: center;
+}
+
+.leftChartContainer {
+	margin-left:5%;
+	width: 40%;
+	height: 600px;
+	float: left;
+	margin-right:5%;
+}
+
+.rightChartContainer{
+	width: 40%;
+	height: 600px;
+	float: left;
+	margin-right:5%;
+}
+
+.errClass{
+	color : red;
+	position: relative;
+    margin: 5px 0 0px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+	
+}
+
+select {
+	height: 25px !important;
+    border-radius: 5px !important;
+}
+	
+body {
+  font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.centredDiv{
+	position: relative;
+    left: 44%;
+    margin: 5px 0 0px 0;
+    float: left;
+}
+
+.mainContent{
+	align-content: center;
+    float: left;
+    width: 100%;
+}
