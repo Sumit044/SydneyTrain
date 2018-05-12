@@ -9,7 +9,7 @@ $(document).ready(function() {
  * @returns
  */
 function loadYears() {
-
+	
 	$.ajax({
 		type : "GET",
 		url : "/SydneyTrainService/loadYears",
@@ -18,7 +18,7 @@ function loadYears() {
 
 			$('#yearsDD').empty();
 			$('<option value="">-- Select Year --</option>').appendTo(
-					'#yearsDD');
+			'#yearsDD');
 			$.each(data.Years, function(i, obj) {
 
 				var div_data = "<option value=" + obj.id + ">" + obj.value
@@ -91,14 +91,23 @@ function loadDefaulterTable(datas) {
 										/[\$,]/g, '') * 1
 										: typeof i === 'number' ? i : 0;
 							};
-
-							var total = api.column(2).data().reduce(
+							
+							//adding all the values of PN column
+							var pnTotal = api.column(1).data().reduce(
 									function(a, b) {
 										return intVal(a) + intVal(b);
 									}, 0);
 
-							$(api.column(1).footer()).html('Total');
-							$(api.column(2).footer()).html('$ ' + total);
+							//adding all the values of Face Value column
+							var fvTotal = api.column(2).data().reduce(
+									function(a, b) {
+										return intVal(a) + intVal(b);
+									}, 0);
+
+							//appending the values in the footer
+							$(api.column(0).footer()).html('Total');
+							$(api.column(1).footer()).html(pnTotal);
+							$(api.column(2).footer()).html('$ ' + fvTotal);
 
 						},
 						columns : [ {
