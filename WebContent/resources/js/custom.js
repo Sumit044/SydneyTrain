@@ -194,3 +194,12 @@ function renderChartFaceValue(datas) {
 	chart.render();
 
 }
+
+
+$(window).resize(function() {
+	  if ($(window).width() <= 800) {
+	    $('.leftChartContainer').remove().insertAfter($('.rightChartContainer'));
+	  } else {
+	    $('.leftChartContainer').remove().insertBefore($('.rightChartContainer'));
+	  }
+});
